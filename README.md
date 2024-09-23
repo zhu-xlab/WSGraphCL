@@ -21,6 +21,8 @@ Hyperspectral images contain rich spectral and spatial information, making them 
 
 To tackle these challenges, we propose **WSGraphCL**, a novel model that integrates contrastive learning and graph neural networks (GNNs). By leveraging weak-strong augmentations and filtering false negative pairs, our method stabilizes the pre-training process and learns robust representations. This enables effective HSI classification with minimal labeled data.
 
+![Model Pipeline](modelpip.png)  <!-- Update this path with the actual path to your image -->
+
 ## Key Features
 
 - **Graph Neural Network Architecture**: Utilizes a spectral-spatial adjacency matrix to construct K-hop subgraphs for effective feature extraction.
