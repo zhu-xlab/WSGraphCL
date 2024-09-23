@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ### Preprocessing
 
-Prepare the Dataset: Download and prepare your hyperspectral [dataset](https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes). Ensure it is in the correct format as expected by the data loader.
+Prepare the Dataset: Download and prepare your hyperspectral [dataset](https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes). MDAS dataset can be downloaded from [here](https://mediatum.ub.tum.de/1657312). Ensure it is in the correct format as expected by the data loader.
 
 ### Training
 
