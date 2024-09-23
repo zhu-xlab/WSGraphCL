@@ -11,7 +11,6 @@ This repository contains the implementation of **WSGraphCL**, a weak-strong grap
 - [Installation](#installation)
 - [Usage](#usage)
 - [Experiments](#experiments)
-- [Results](#results)
 - [Citation](#citation)
 - [License](#license)
 
@@ -59,10 +58,6 @@ To train the WSGraphCL model, use the following .ipynb files:
 ## Experiments
 
 We conducted extensive experiments to validate the effectiveness of WSGraphCL under various few-shot scenarios. Our model consistently outperformed several baseline methods on benchmark HSI datasets.
-
-## Results
-
-The experimental results demonstrate that WSGraphCL achieves state-of-the-art performance in HSI classification, particularly in scenarios with limited labeled data. Below are some key performance metrics:
 
 ## Citation
 
