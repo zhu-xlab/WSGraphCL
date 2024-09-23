@@ -36,6 +36,7 @@ Clone the repository and install the required packages:
 git clone https://github.com/zhu-xlab/WSGraphCL.git
 cd WSGraphCL
 pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -73,7 +74,7 @@ If you find this work useful, please consider citing our paper:
   year={2024},
   url={https://github.com/zhu-xlab/WSGraphCL}
 }
-
+```
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
