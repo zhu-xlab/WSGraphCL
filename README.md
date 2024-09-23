@@ -48,13 +48,11 @@ Prepare the Dataset: Download and prepare your hyperspectral dataset. Ensure it 
 ### Training
 
 To train the WSGraphCL model, use the following .ipynb files:
-
-1. Indian_pines_mainfile.ipynb
-
-2. Pavia_uni_mainfile.ipynb
-
-3. MDAS_mainfile.ipynb
-
+```bash
+1. model/Indian_pines_mainfile.ipynb
+2. model/Pavia_uni_mainfile.ipynb
+3. model/MDAS_mainfile.ipynb
+```
 ## Experiments
 
 We conducted extensive experiments to validate the effectiveness of WSGraphCL under various few-shot scenarios. Our model consistently outperformed several baseline methods on benchmark HSI datasets.
