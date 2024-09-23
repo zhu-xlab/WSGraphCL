@@ -1,6 +1,3 @@
-# Script to create a README.md file for the WSGraphCL project
-
-readme_content = """
 # WSGraphCL: Weak-Strong Graph Contrastive Learning for Hyperspectral Image Classification
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -39,3 +36,46 @@ Clone the repository and install the required packages:
 git clone https://github.com/zhu-xlab/WSGraphCL.git
 cd WSGraphCL
 pip install -r requirements.txt
+
+## Usage
+
+### Preprocessing
+
+Prepare the Dataset: Download and prepare your hyperspectral dataset. Ensure it is in the correct format as expected by the data loader.
+
+### Training
+
+To train the WSGraphCL model, use the following .ipynb files:
+
+1. Indian_pines_mainfile.ipynb
+
+2. Pavia_uni_mainfile.ipynb
+
+3. MDAS_mainfile.ipynb
+
+## Experiments
+
+We conducted extensive experiments to validate the effectiveness of WSGraphCL under various few-shot scenarios. Our model consistently outperformed several baseline methods on benchmark HSI datasets.
+
+## Results
+
+The experimental results demonstrate that WSGraphCL achieves state-of-the-art performance in HSI classification, particularly in scenarios with limited labeled data. Below are some key performance metrics:
+
+## Citation
+
+If you find this work useful, please consider citing our paper:
+
+```bibtex
+@article{wang2024,
+  title={Weak-strong Graph Contrastive Learning Neural Network for Hyperspectral Image Classification},
+  author={Sirui Wang, Nassim Ait Ali Braham, Xiaoxiang Zhu},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2024},
+  url={https://github.com/zhu-xlab/WSGraphCL}
+}
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+
+MIT License:
