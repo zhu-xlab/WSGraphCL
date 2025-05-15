@@ -31,7 +31,7 @@ To tackle these challenges, we propose **WSGraphCL**, a novel model that integra
 
 ## Installation
 
-Clone the repository and install the required packages (Please note: requirements.txt is built on the Linux system, please find the matched PyTorch version to CUDA devices):
+Clone the repository and install the required packages (Please note: requirements.txt is built on the Linux system, please find the matched PyTorch version with CUDA devices):
 
 ```bash
 git clone https://github.com/zhu-xlab/WSGraphCL.git
