@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen.svg)](https://www.python.org/downloads/)
 
-This repository contains the implementation of **WSGraphCL**, a weak-strong graph contrastive learning model designed for hyperspectral image (HSI) classification. The model is built to effectively handle noisy HSI data and requires only a limited amount of labeled data, making it particularly suitable for few-shot learning scenarios. For more details, please refer to our [paper](https://github.com/zhu-xlab/WSGraphCL).
+This repository contains the implementation of **WSGraphCL**, a weak-strong graph contrastive learning model designed for hyperspectral image (HSI) classification. The model is built to effectively handle noisy HSI data and requires only a limited amount of labeled data, making it particularly suitable for few-shot learning scenarios. For more details, please refer to our [paper]([https://ieeexplore.ieee.org/abstract/document/10988682]).
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -31,7 +31,7 @@ To tackle these challenges, we propose **WSGraphCL**, a novel model that integra
 
 ## Installation
 
-Clone the repository and install the required packages:
+Clone the repository and install the required packages (Please note: requirements.txt is built on the Linux system, please find the matched PyTorch version to CUDA devices):
 
 ```bash
 git clone https://github.com/zhu-xlab/WSGraphCL.git
@@ -62,16 +62,18 @@ We conducted extensive experiments to validate the effectiveness of WSGraphCL un
 If you find this work useful, please consider citing our paper:
 
 ```bibtex
-@article{wang2024,
-  title={Weak-strong Graph Contrastive Learning Neural Network for Hyperspectral Image Classification},
-  author={Sirui Wang, Nassim Ait Ali Braham, Xiaoxiang Zhu},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  year={2024},
-  url={https://github.com/zhu-xlab/WSGraphCL}
-}
+@ARTICLE{10988682,
+  author={Wang, Sirui and Braham, Nassim Ait Ali and Zhu, Xiao Xiang},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Weak–Strong Graph Contrastive Learning Neural Network for Hyperspectral Image Classification}, 
+  year={2025},
+  volume={63},
+  number={},
+  pages={1-17},
+  keywords={Hyperspectral imaging;Contrastive learning;Feature extraction;Image classification;Training;Adaptation models;Earth;Data models;Noise;Image edge detection;Contrastive learning (CL);deep learning;graph neural networks (GNNs);hyperspectral image (HSI) classification;self-supervised learning (SSL)},
+  doi={10.1109/TGRS.2025.3562261}}
+
 ```
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
-MIT License:
