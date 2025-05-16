@@ -212,7 +212,7 @@ def build_Khopsubgraph(G, id, second_gen):
     #edge_attr = edge_attr[np.array(np.where(edge_index[0]!=edge_index[1]))]
     #node_num=edge_attr.size()
 
-    subset, edge_index, mapping, edge_mask  = k_hop_subgraph(id, second_gen, edge_index,  relabel_nodes=True, num_nodes=node_num,flow='source_to_target',directed=True)
+    subset, edge_index, mapping, edge_mask  = k_hop_subgraph(id, second_gen, edge_index,  relabel_nodes=True, num_nodes=node_num,flow='source_to_target')
     
     return Data(x=G.x[subset], edge_index=edge_index,edge_attr=edge_attr[edge_mask], y=G.y[id], train_mask=G.train_mask[id],test_mask=G.test_mask[id],num_classes=num_classes+1)
 

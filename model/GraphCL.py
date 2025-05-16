@@ -32,7 +32,7 @@ from sklearn.metrics import pairwise_distances
 from sklearn.model_selection import GridSearchCV
 from tqdm import trange
 from sklearn.model_selection import StratifiedKFold
-
+from time import perf_counter, sleep
 
 from contrasive import Contrastive
 from Graph_Construction import adjacency_matrix, get_dataset, MyOwnDataset
@@ -148,14 +148,14 @@ class GraphUnsupervised(object):
                 #preds = []
                 loader = DataLoader(self.dataset, self.batch_size, shuffle=False)
                 embed, lbls = self.get_embed(enc.to(self.device), loader)
-                train_embs=embed[self.dataset._data.train_mask]
-                train_lbls=lbls[self.dataset._data.train_mask]
-                test_embs=embed[self.dataset._data.test_mask]
-                test_lbls=lbls[self.dataset._data.test_mask]
+                train_embs=embed[self.dataset.data.train_mask]
+                train_lbls=lbls[self.dataset.data.train_mask]
+                test_embs=embed[self.dataset.data.test_mask]
+                test_lbls=lbls[self.dataset.data.test_mask]
                 if self.classifier == 'LogReg':
                     if self.search:
                         params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                        classifier = GridSearchCV(LogisticRegression(), params, cv=5, scoring='accuracy', verbose=0,return_train_score=True)
+                        classifier = GridSearchCV(LogisticRegression(max_iter=50), params, cv=5, scoring='accuracy', verbose=0,return_train_score=True)
                     else:
                         classifier = LogisticRegression(C=10)
                     classifier.fit(train_embs, train_lbls)
@@ -175,8 +175,11 @@ class GraphUnsupervised(object):
                       classifier = SVC(C=10)
                     classifier.fit(train_embs, train_lbls)
                     train_scores=classifier.score(train_embs, train_lbls)
+                    start = perf_counter()
                     pred=classifier.predict(test_embs)
                     result=classifier.predict(embed)
+                    end = perf_counter()
+                    print('只测试的用时',end-start)
                     test_acc = accuracy_score(test_lbls, pred)
 
                     #loss = nn.CrossEntropyLoss(out, train_lbls)
@@ -193,8 +196,11 @@ class GraphUnsupervised(object):
             
                     rf_clf.fit(train_embs, train_lbls)
                     train_scores=rf_clf.score(train_embs, train_lbls)
+                    start = perf_counter()
                     pred=rf_clf.predict(test_embs)
                     result=rf_clf.predict(embed)
+                    end = perf_counter()
+                    print('只测试的用时',end-start)
                     test_acc = accuracy_score(test_lbls, pred)
                     preds.append(np.array(result))
                     test_scores_m.append(test_acc)

@@ -20,9 +20,7 @@ import os
 import networkx as nx
 from torch import Tensor
 from torch_geometric.data import Data
-from torch_geometric.data.datapipes import functional_transform
 from torch_geometric.transforms import BaseTransform
-from torch_geometric.utils import scatter
 from sklearn.decomposition import PCA
 from Graph_Construction import adjacency_matrix, get_dataset, MyOwnDataset
 
