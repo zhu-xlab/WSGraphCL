@@ -42,7 +42,7 @@ Please note: requirements.txt is built on the Linux system, please find the matc
 These are the necessary Python libraries that users can install manually. Please use conda install instead of pip install if the package requires other dependencies.
 
 ```bash
-anaconda, conda, dive-into-graphs, h5py, geopandas, ipykernel, matplotlib, numpy, pandas, Pillow, pyscf, scikit-imag, scikit-learn, scipy, tifffile, torch, torch_cluster, torch_geometric, torch_scatter, torch_sparse, torchaudio, torchmetrics, torchvision, tqdm, typing
+anaconda, conda, dive-into-graphs, h5py, geopandas, ipykernel, matplotlib, numpy, pandas, Pillow, pyscf, scikit-imag, scikit-learn, scipy, tifffile, torch, torch_cluster, torch_geometric, torch_scatter, torch_sparse, torchaudio, torchmetrics, torchvision, tqdm, typing, thop, fvcore, math, datetime, time, copy
 ```
 
 ## Usage
