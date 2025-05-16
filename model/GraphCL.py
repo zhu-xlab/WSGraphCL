@@ -179,7 +179,7 @@ class GraphUnsupervised(object):
                     pred=classifier.predict(test_embs)
                     result=classifier.predict(embed)
                     end = perf_counter()
-                    print('只测试的用时',end-start)
+                    print('test time',end-start)
                     test_acc = accuracy_score(test_lbls, pred)
 
                     #loss = nn.CrossEntropyLoss(out, train_lbls)
@@ -200,7 +200,7 @@ class GraphUnsupervised(object):
                     pred=rf_clf.predict(test_embs)
                     result=rf_clf.predict(embed)
                     end = perf_counter()
-                    print('只测试的用时',end-start)
+                    print('test time',end-start)
                     test_acc = accuracy_score(test_lbls, pred)
                     preds.append(np.array(result))
                     test_scores_m.append(test_acc)
