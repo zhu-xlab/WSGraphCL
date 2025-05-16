@@ -31,12 +31,18 @@ To tackle these challenges, we propose **WSGraphCL**, a novel model that integra
 
 ## Installation
 
-Clone the repository and install the required packages (Please note: requirements.txt is built on the Linux system, please find the matched PyTorch version with CUDA devices):
+Clone the repository and install the required packages: 
 
 ```bash
 git clone https://github.com/zhu-xlab/WSGraphCL.git
 cd WSGraphCL
 pip install -r requirements.txt
+```
+Please note: requirements.txt is built on the Linux system, please find the matched [PyTorch](https://pytorch.org/get-started/previous-versions/) version with CUDA devices.
+These are the necessary Python libraries that users can install manually. Please use conda install instead of pip install if the package requires other dependencies.
+
+```bash
+anaconda, conda, dive-into-graphs, h5py, geopandas, ipykernel, matplotlib, numpy, pandas, Pillow, pyscf, scikit-imag, scikit-learn, scipy, tifffile, torch, torch_cluster, torch_geometric, torch_scatter, torch_sparse, torchaudio, torchmetrics, torchvision, tqdm, typing
 ```
 
 ## Usage
