@@ -1,6 +1,6 @@
 # WSGraphCL: Weak-Strong Graph Contrastive Learning for Hyperspectral Image Classification
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 [![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen.svg)](https://www.python.org/downloads/)
 
 This repository contains the implementation of **WSGraphCL**, a weak-strong graph contrastive learning model designed for hyperspectral image (HSI) classification. The model is built to effectively handle noisy HSI data and requires only a limited amount of labeled data, making it particularly suitable for few-shot learning scenarios. For more details, please refer to our [paper]([https://ieeexplore.ieee.org/abstract/document/10988682]).
